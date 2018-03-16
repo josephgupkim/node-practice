@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <p>I'm usually Joe, but today I'm <%= drunkName %></p>
+
+    <% videodata.categories.forEach(function(video){ %>
+      <li><%= video.categoryName %></li>
+    <% }); %>
+
+
+    <% for (let i = 0; i < 5; i++){ %>
+      <li>I'm #<%= i %></li>
+    <% } %>
+  </body>
+</html>
